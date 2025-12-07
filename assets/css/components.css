@@ -1,0 +1,116 @@
+.barra_grupo--logo-p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.barra_busqueda {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: aliceblue;
+    justify-content: space-between;
+    box-shadow: 0px 1px 10px #00000041;
+}
+
+.header_icon{
+    width: 30px;
+    height: auto;
+}
+
+.header_texto-barra {
+    font-size: 1.2rem;
+    
+}
+
+.boton_menu{
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: aliceblue;
+
+}
+
+.icono-menu--dos{
+    width: 20px;
+}
+
+.boton_new-onboarding {
+    background: var(--color-secondary);
+    margin-top: 25px;
+    padding: 0.9rem 2.9rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3rem;
+    align-self: center;
+    box-shadow: 0px 1px 19px #46454536;
+    color: rgb(70, 69, 69);
+}
+
+.titulo_header {
+    font-size: 3.3rem;
+    margin: 1px 20px;
+    line-height: 3.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.descripcion_header {
+    font-size: 1.4rem;
+    margin: 8px;
+    margin-bottom: 20px;
+    color: rgb(82, 81, 81);
+}
+
+.boton_empezar {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    width: 170px;
+    padding: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-family-base);
+}
+
+.boton_plans{
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.308);
+    padding: 0.2rem;
+    width: 170px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: var(--font-family-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icono_flecha{
+    width: 35px;
+}
+
+.img_header_ejemplo{
+    width: 350px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.164);
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 35px;
+}
