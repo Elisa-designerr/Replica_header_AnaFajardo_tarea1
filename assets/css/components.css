@@ -58,9 +58,8 @@
 
 .titulo_header {
     font-size: 3.3rem;
-    margin: 1px 20px;
+    margin: 10px 20px 1px;
     line-height: 3.5rem;
-    margin-top: 10px;
     font-weight: bold;
     color: var(--color-primary);
 }
@@ -113,4 +112,53 @@
     border-radius: 15px;
     margin: auto;
     margin-top: 35px;
+}
+
+.titulos_main {
+    font-size: 2.6rem;
+    margin: 12px 20px;
+    line-height: 3rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.nosotros_descripcion{
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    color: rgb(82, 81, 81);
+}
+
+hr{
+    width: 60px;
+    border: 2px solid rgba(182, 226, 239, 0.795);
+    margin-bottom: 25px;
+}
+
+.servicios_lista{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.servicio_item{
+    border:  2px solid #50ceee3f;
+    padding: 1rem;
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(54, 54, 54);
+    box-shadow: 0px 1px 10px #4645451f;
+}
+
+.servicios_iconos{
+    width: 30px;
+    margin-top: 5px;
 }
