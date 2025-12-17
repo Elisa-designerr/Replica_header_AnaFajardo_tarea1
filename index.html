@@ -17,41 +17,45 @@
 </head>
 
 <body>
-    <header>
-        <div class="barra_busqueda">
-            <div class="barra_grupo--logo-p">
-                <img src="./assets/icons/logo_acme.svg" alt="logo Acme" class="header_icon">
-                <p class="header_texto-barra">ACME</p>
+    <header class="header">
+        <div class="barra__busqueda">
+            <div class="barra__grupo--logo-p">
+                <figure>
+                    <img src="./assets/icons/logo_acme.svg" alt="logo Acme" class="header__icon">
+                </figure>
+                <p class="header__texto-barra">ACME</p>
             </div>
-            <button class="boton_menu"><img src="./assets/icons/icono-menu.svg" alt="icono menu dos lineas"
+            <button class="boton__menu"><img src="./assets/icons/icono-menu.svg" alt="icono menu dos lineas"
                     class="icono-menu--dos"></button>
         </div>
 
-        <div class="contenido_header">
-            <button class="boton_new-onboarding">New onboarding experience -→</button>
+        <div class="contenido__header">
+            <button class="boton__new-onboarding">New onboarding experience -→</button>
 
-            <h1 class="titulo_header">Easiest way to <br> power global teams.</h1>
+            <h1 class="titulo__header">Easiest way to <br> power global teams.</h1>
 
-            <p class="descripcion_header">Acme makes running global teams simple. HR, Payroll, International Employment,
+            <p class="descripcion__header">Acme makes running global teams simple. HR, Payroll, International
+                Employment,
                 contractor
                 management and
                 more.</p>
-
-            <button class="boton_empezar">Get Started</button>
-            <button class="boton_plans">See our plans <img src="./assets/icons/flecha.svg" alt="flecha icono"
-                    class="icono_flecha"></button>
-
-            <img src="./assets/img/acmeImg.webp" alt="Imagen ejemplo" class="img_header_ejemplo">
+            <button class="boton__empezar">Get Started</button>
+            <button class="boton__plans">See our plans <img src="./assets/icons/flecha.svg" alt="flecha icono"
+                    class="icono__flecha"></button>
+            <figure>
+                <img src="./assets/img/acmeImg.webp" alt="Imagen ejemplo" class="img__header_ejemplo">
+            </figure>
         </div>
     </header>
     <main>
         <section class="nosotros">
-            <h2 class="titulos_main">Quiénes Somos</h2>
+            <h2 class="titulos__main">Quiénes Somos</h2>
             <hr>
-            <p class="nosotros_descripcion">Acme es una empresa dedicada a facilitar la gestión de equipos globales mediante 
+            <p class="nosotros__descripcion">Acme es una empresa dedicada a facilitar la gestión de equipos globales
+                mediante
                 soluciones innovadoras
                 en recursos humanos, nómina y empleo internacional.</p>
-            <p class="nosotros_descripcion">
+            <p class="nosotros__descripcion">
                 Nuestra misión es simplificar los procesos complejos para que las empresas puedan centrarse en su
                 crecimiento
                 y éxito.
@@ -60,14 +64,23 @@
         </section>
 
         <section class="servicios">
-            <h2 class="titulos_main">Servicios</h2>
-            <ul class="servicios_lista">
-                <li class="servicio_item">Gestión de Recursos Humanos <br><img src="./assets/icons/gestion_derecursoshumanos_icono.svg" alt="Icono gestion de derechos humanos" class="servicios_iconos"></li>
-                <li class="servicio_item">Nómina Internacional <br><img src="./assets/icons/nomina_internacional_icono.svg" alt="Icono de nomina internacional" class="servicios_iconos"></li>
-                <li class="servicio_item">Empleo Global <br><img src="./assets/icons/empleo_global_icono.svg" alt="Icono de empleo global" class="servicios_iconos"></li>
-                <li class="servicio_item">Gestión de Contratistas <br><img src="./assets/icons/gestion_de_contratistas-icono.svg" alt="Icono de gestion de contratistas" class="servicios_iconos"></li>
-                <li class="servicio_item">Cumplimiento Legal <br><img src="./assets/icons/cumplimiento_legal-icono.svg" alt="Icono cumplimiento legal" class="servicios_iconos"></li>
-                <li class="servicio_item">Asesoría Personalizada <br><img src="./assets/icons/asesoria-icono.svg" alt="Icono asesoria personalizada" class="servicios_iconos"></li>
+            <h2 class="titulos__main">Servicios</h2>
+            <ul class="servicios__lista">
+                <li class="servicio__item">Gestión de Recursos Humanos <br><img
+                        src="./assets/icons/gestion_derecursoshumanos_icono.svg" alt="Icono gestion de derechos humanos"
+                        class="servicios__iconos"></li>
+                <li class="servicio__item">Nómina Internacional <br><img
+                        src="./assets/icons/nomina_internacional_icono.svg" alt="Icono de nomina internacional"
+                        class="servicios__iconos"></li>
+                <li class="servicio__item">Empleo Global <br><img src="./assets/icons/empleo_global_icono.svg"
+                        alt="Icono de empleo global" class="servicios__iconos"></li>
+                <li class="servicio__item">Gestión de Contratistas <br><img
+                        src="./assets/icons/gestion_de_contratistas-icono.svg" alt="Icono de gestion de contratistas"
+                        class="servicios__iconos"></li>
+                <li class="servicio__item">Cumplimiento Legal <br><img src="./assets/icons/cumplimiento_legal-icono.svg"
+                        alt="Icono cumplimiento legal" class="servicios__iconos"></li>
+                <li class="servicio__item">Asesoría Personalizada <br><img src="./assets/icons/asesoria-icono.svg"
+                        alt="Icono asesoria personalizada" class="servicios__iconos"></li>
         </section>
 
         <section class="cta">
@@ -76,21 +89,22 @@
         </section>
 
         <section class="formulario">
-            <h2 class="titulos_main">Contáctanos</h2>
-            <p class="form__descripcion">Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <h2 class="titulos__main">Contáctanos</h2>
+            <p class="form__descripcion">Si tienes alguna pregunta o necesitas más información, no dudes en
+                contactarnos.</p>
 
             <form class="formulario__contacto">
 
-             <label for="nombre" class="form__label">Nombre:</label>
-             <input type="text" name="nombre" class="form__input"><br>
+                <label for="nombre" class="form__label">Nombre:</label>
+                <input type="text" name="nombre" class="form__input"><br>
 
-             <label for="correo" class="form__label">Correo electrónico:</label>
-             <input type="email" name="correo" class="form__input"><br>
+                <label for="correo" class="form__label">Correo electrónico:</label>
+                <input type="email" name="correo" class="form__input"><br>
 
-             <label for="mensaje" class="form__label">Mensaje:</label>
-             <textarea name="mensaje" class="form__textarea"></textarea>
+                <label for="mensaje" class="form__label">Mensaje:</label>
+                <textarea name="mensaje" class="form__textarea"></textarea>
 
-             <button type="submit" class="form__btn-enviar">Enviar</button>
+                <button type="submit" class="form__btn-enviar">Enviar</button>
             </form>
         </section>
 

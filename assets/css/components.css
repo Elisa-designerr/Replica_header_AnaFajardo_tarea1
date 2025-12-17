@@ -1,9 +1,10 @@
-.barra_grupo--logo-p{
+.barra__grupo--logo-p {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.barra_busqueda {
+
+.barra__busqueda {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -19,17 +20,34 @@
     box-shadow: 0px 1px 10px #00000041;
 }
 
-.header_icon{
+@media (min-width: 768px) {
+    .barra__busqueda {
+        max-width: 500px;
+    }
+}
+@media (min-width: 1024px) {
+    .barra__busqueda {
+        max-width: 700px;
+        height: 43px;
+    }
+}
+
+.header__icon {
     width: 30px;
     height: auto;
 }
 
-.header_texto-barra {
+.header__texto-barra {
     font-size: 1.2rem;
-    
 }
 
-.boton_menu{
+@media (min-width: 768px) {
+    .header__texto-barra {
+        font-size: 1.5rem;
+    }
+}
+
+.boton__menu {
     width: 20%;
     height: auto;
     margin-right: 10px;
@@ -37,14 +55,13 @@
     border: none;
     background: none;
     color: aliceblue;
-
 }
 
-.icono-menu--dos{
+.icono-menu--dos {
     width: 20px;
 }
 
-.boton_new-onboarding {
+.boton__new-onboarding {
     background: var(--color-secondary);
     margin-top: 25px;
     padding: 0.9rem 2.9rem;
@@ -56,22 +73,35 @@
     color: rgb(70, 69, 69);
 }
 
-.titulo_header {
+.titulo__header {
     font-size: 3.3rem;
     margin: 10px 20px 1px;
     line-height: 3.5rem;
     font-weight: bold;
     color: var(--color-primary);
 }
+@media (min-width: 1024px) {
+    .titulo__header {
+        font-size: 4.5rem;
+        width: 70%;
+        line-height: 4rem;
+    }
+}
 
-.descripcion_header {
+.descripcion__header {
     font-size: 1.4rem;
     margin: 8px;
     margin-bottom: 20px;
     color: rgb(82, 81, 81);
 }
+@media (min-width: 1024px) {
+    .descripcion__header {
+        font-size: 2rem;
+        width: 70%;
+    }
+}
 
-.boton_empezar {
+.boton__empezar {
     background: var(--color-primary);
     color: var(--color-secondary);
     width: 170px;
@@ -83,7 +113,7 @@
     font-family: var(--font-family-base);
 }
 
-.boton_plans{
+.boton__plans {
     background: none;
     border: 2px solid rgba(255, 255, 255, 0.308);
     padding: 0.2rem;
@@ -99,11 +129,11 @@
     gap: 8px;
 }
 
-.icono_flecha{
+.icono__flecha {
     width: 35px;
 }
 
-.img_header_ejemplo{
+.img__header_ejemplo {
     width: 350px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.164);
@@ -113,8 +143,18 @@
     margin: auto;
     margin-top: 35px;
 }
+@media (min-width: 768px) {
+    .img__header_ejemplo {
+        width: 450px;
+    }
+}
+@media (min-width: 1024px) {
+    .img__header_ejemplo {
+        width: 800px;
+    }
+}
 
-.titulos_main {
+.titulos__main {
     font-size: 2.6rem;
     margin: 12px 20px;
     line-height: 3rem;
@@ -123,19 +163,26 @@
     color: var(--color-primary);
 }
 
-.nosotros_descripcion{
+.nosotros__descripcion {
     font-size: 1.5rem;
     margin-bottom: 18px;
     color: rgb(82, 81, 81);
 }
+@media (min-width: 1024px) {
+    .nosotros__descripcion {
+        font-size: 1.9rem;
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+}
 
-hr{
+hr {
     width: 60px;
     border: 2px solid rgba(182, 226, 239, 0.795);
     margin-bottom: 25px;
 }
 
-.servicios_lista{
+.servicios__lista {
     list-style: none;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -146,8 +193,8 @@ hr{
     margin-top: 15px;
 }
 
-.servicio_item{
-    border:  2px solid #50ceee3f;
+.servicio__item {
+    border: 2px solid #50ceee3f;
     padding: 1rem;
     width: 160px;
     height: 80px;
@@ -156,43 +203,89 @@ hr{
     font-size: 1.3rem;
     color: rgb(54, 54, 54);
     box-shadow: 0px 1px 10px #4645451f;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family-base);
 }
 
-.servicios_iconos{
+@media (min-width: 768px) {
+    .servicio__item {
+        width: 250px;
+        height: 85px;
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .servicio__item {
+        width: 380px;
+        height: 100px;
+        font-size: 1.8rem;
+    }
+}
+
+.servicios__iconos {
     width: 30px;
     margin-top: 5px;
 }
+@media (min-width: 768px) {
+    .servicios__iconos {
+        width: 45px;
+    }
+}
+@media (min-width: 1024px) {
+    .servicios__iconos {
+        width: 50px;
+    }
+}
 
-.cta__titulo{
+.cta__titulo {
     font-size: 2.7rem;
     margin: 10px 20px 15px;
     font-weight: bold;
     color: var(--color-primary);
 }
-.cta__boton{
+
+.cta__boton {
     background: var(--color-primary);
     color: var(--color-secondary);
     width: 150px;
     padding: 0.8rem;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.473);
-    font-size: 1.6rem;
-    margin-right: 19rem;
+    font-size: 1.7rem;
     font-family: var(--font-family-base);
     cursor: pointer;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+    .cta__boton {
+        width: 180px;
+        font-size: 1.8rem;
+        margin-left: auto;
+    }
 }
 
-.form__descripcion{
+.form__descripcion {
     text-align: center;
+    width: 90%;
     font-size: 1.5rem;
     color: rgba(48, 47, 47, 0.89);
 }
-.form__label{
+@media (min-width: 1024px) {
+    .form__descripcion {
+        font-size: 1.8rem;
+        width: 60%;
+    }
+}
+
+.form__label {
     font-size: 1.4rem;
     margin-bottom: 8px;
     color: rgb(75, 75, 75);
 }
-.form__input{
+
+.form__input {
     width: 95%;
     max-width: 400px;
     height: 30px;
@@ -202,8 +295,10 @@ hr{
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
-.form__textarea{
+
+.form__textarea {
     width: 95%;
+    height: 50px;
     max-width: 400px;
     border-radius: 8px;
     border: 2px solid rgba(0, 0, 0, 0.205);
@@ -212,26 +307,32 @@ hr{
     margin-bottom: 15px;
     resize: none;
 }
-.form__btn-enviar{
+
+.form__btn-enviar {
     background: var(--color-primary);
     color: var(--color-secondary);
     width: 130px;
+    height: 40px;
     padding: 0.8rem;
     border-radius: 10px;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    margin-top: 5px;
-    margin-left: 24%;
+    margin-top: 19px;
+    margin-left: 0;
+    align-self: center;
 }
 
-.footer__titulo{
+
+.footer__titulo {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
     color: var(--color-secondary);
 }
-.footer__links a, li{
+
+.footer__links a,
+li {
     font-size: 1.4rem;
     text-decoration: none;
     display: inline;
@@ -239,7 +340,14 @@ hr{
     color: rgba(164, 206, 253, 0.733);
     cursor: pointer;
 }
-.footer__texto{
+@media (min-width: 768px) {
+    .footer__links a,
+    li {
+        font-size: 1.8rem;
+    }
+}
+
+.footer__texto {
     font-size: 1.2rem;
     margin-top: 20px;
     color: rgb(200, 200, 200);
